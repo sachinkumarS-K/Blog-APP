@@ -12,7 +12,7 @@ function App() {
   //console.log(loaction)
   useEffect(() => {
     const page = searchParam.get("page") ?? 1;
-    console.log(page)
+    //console.log(page)
     if (location.pathname.includes('tags')) {
       const tag = loaction.pathname.split('/').at(-1);
       fetchData(Number(page) , tag)

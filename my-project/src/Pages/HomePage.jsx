@@ -5,7 +5,7 @@ import Footer from '../Component/Footer';
 import { AppContext } from '../Context/AppContext';
 
 function HomePage() {
-    const { fetchData } = useContext(AppContext);
+    const { fetchData, totalPage } = useContext(AppContext);
     
     useEffect(() => {
       fetchData();
